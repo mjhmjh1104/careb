@@ -10,8 +10,8 @@ function draw(){
   ctx.restore();
 }
 app.get('/',function (req,res) {
-  res.font = "20px Arial"
-  res.fillStyle = "red"
+  res.font = "200px Arial";
+  res.fillStyle = "red";
   res.send('Welcome to Hello World!');
 });
 
