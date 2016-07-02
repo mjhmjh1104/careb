@@ -10,7 +10,9 @@ function draw(){
   ctx.restore();
 }
 app.get('/',function (req,res) {
-  res.send('!');
+  res.font = "20px Arial"
+  res.fillStyle = "red"
+  res.send('Welcome to Hello World!');
 });
 
 app.listen(3000, function(){
