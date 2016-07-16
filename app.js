@@ -15,7 +15,7 @@ app.get('/',function (req,res) {
   res.send('여기는 car.eb 서버입니다. 개발자 Ender_Dragon1104, Bluechicken0520님이 열심히 만들고 있으니 완성되면 한 번 놀러 와보세요!');
 }
 );
-
+app.set("view engine", 'ejs');
 app.use(express.static(path.join(__dirname + 'public')));
 console.log(__dirname);
 
