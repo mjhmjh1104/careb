@@ -16,7 +16,7 @@ app.get('/',function (req,res) {
 }
 );
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public/index.html'));
 console.log(__dirname);
 
 var port = process.env.PORT || 3000;
