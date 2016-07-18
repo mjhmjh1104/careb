@@ -19,18 +19,6 @@ app.get('/',function (req,res) {
 app.use(express.static(__dirname + '/public/index.html'));
 console.log(__dirname);
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/stylesheets/master.css">
-    <title>Careb games!</title>
-  </head>
-  <body>
-    <h1>Car.eb</h1>
-  </body>
-</html>
-
 var port = process.env.PORT || 3000;
 app.listen(port, function(){
   console.log('Server On!');
